@@ -449,8 +449,137 @@ footer {
         right: 12px;
     }
 }
+/* =========================================
+   ISLAMIC FLORAL WEDDING DECORATION
+   ========================================= */
+
+/* Elegant overall background */
+body {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(201, 166, 107, 0.10) 0 2px, transparent 3px),
+        radial-gradient(circle at 90% 85%, rgba(201, 166, 107, 0.10) 0 2px, transparent 3px),
+        #fbf8f1;
+}
+
+/* Decorative Islamic-style border */
+.hero {
+    border: 1px solid rgba(183, 150, 95, 0.35);
+    box-shadow:
+        inset 0 0 0 8px rgba(255,255,255,0.20),
+        inset 0 0 0 10px rgba(183,150,95,0.10);
+    overflow: hidden;
+}
+
+/* Floral corner decorations */
+.hero::before,
+.hero::after {
+    position: absolute;
+    z-index: 1;
+    font-family: Georgia, serif;
+    color: rgba(183, 150, 95, 0.65);
+    font-size: 55px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.hero::before {
+    content: "❦";
+    top: 22px;
+    left: 22px;
+    transform: rotate(-25deg);
+}
+
+.hero::after {
+    content: "❦";
+    bottom: 22px;
+    right: 22px;
+    transform: rotate(155deg);
+}
+
+/* Keep all wedding text above decorations */
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Elegant decorative line */
+.hero .small-title::before {
+    content: "❁  ✦  ❁";
+    display: block;
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: #b7965f;
+    margin-bottom: 18px;
+}
+
+/* Decorative divider under the names */
+h1::after {
+    content: "❦";
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #b7965f;
+    margin: 18px auto 0;
+}
+
+/* More elegant date styling */
+.hero .date,
+.hero .wedding-date {
+    letter-spacing: 5px;
+    color: #24483a;
+}
+
+/* Soft golden glow around the main names */
+h1 {
+    text-shadow:
+        0 3px 8px rgba(36,72,58,0.18),
+        0 0 18px rgba(183,150,95,0.12);
+}
+
+/* Islamic geometric-inspired pattern at the bottom */
+.hero {
+    background-image:
+        linear-gradient(
+            rgba(255,248,248,0.86),
+            rgba(255,248,248,0.94)
+        ),
+        url("photo1.jpg"),
+        repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 18px,
+            rgba(183,150,95,0.035) 19px,
+            transparent 20px
+        );
+    background-position: center, center, center;
+    background-size: cover, cover, 28px 28px;
+}
+
+/* Small floating floral ornaments */
+.hero::marker {
+    display: none;
+}
+
+/* Gold elegant horizontal ornament */
+.ampersand::before {
+    content: "✦";
+    display: block;
+    color: #b7965f;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Soft romantic finishing touch */
+.hero {
+    position: relative;
+}
+
+.hero::selection {
+    background: rgba(183,150,95,0.2);
+}    
 
 </style>
+    
 </head>
 
 
